@@ -1,0 +1,33 @@
+.pinkShade {
+  width: 300px;
+}
+
+.clickOpenSvg{
+  width: 18px;
+  height: 18px;
+}
+
+@media screen and (max-width: 1200px) {
+  .pinkShade {
+    width: 250px;
+  }
+}
+.timelinesvg{
+  width: 35px;
+  height: 35px;
+}
+@media screen and (max-width: 920px){
+.clickOpenSvg{
+  width: 30px;
+  height: 30px;
+}
+}
+@media screen and (max-width: 530px){
+   .pinkShade {
+    width: 180px;
+  }
+  .timelinesvg{
+  width: 30px;
+  height: 30px;
+}
+}

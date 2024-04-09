@@ -1,0 +1,101 @@
+.OverviewWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 4vh 0vw;
+  gap: 4vh;
+  flex-direction: column;
+  background: url("./assets/bg.svg") center center/cover no-repeat;
+}
+
+.InnerDiv {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 77%;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  color: white;
+  height: 100%;
+}
+.InnerDiv > div > img {
+  width: fit-content;
+  height: 50px;
+  object-fit: contain;
+}
+.Mulearn {
+  flex-direction: row;
+}
+.InnerDiv img {
+  max-height: 500px;
+  object-fit: contain;
+
+  width: 50%;
+}
+
+.InnerDiv div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 20px;
+}
+
+.InnerDiv div h1 {
+  margin: 0;
+  padding: 0%;
+  font-size: 30px;
+}
+.InnerDiv div p {
+  margin: 0;
+  padding: 0%;
+  font-size: 18px;
+}
+.InnerDiv div a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+@media screen and (max-width: 900px) {
+  .InnerDiv {
+    gap: 5%;
+  }
+  .InnerDiv img {
+    max-height: 400px;
+  }
+  .InnerDiv div h1 {
+    font-size: 30px;
+  }
+  .InnerDiv div p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .InnerDiv {
+    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+  }
+  .InnerDiv img {
+    max-height: auto;
+    width: 100%;
+  }
+  .InnerDiv div h1 {
+    font-size: 30px;
+  }
+  .InnerDiv div p {
+    font-size: 14px;
+  }
+  .InnerDiv div {
+    align-items: center;
+  }
+}

@@ -1,0 +1,97 @@
+.HomeWrapper {
+  width: 100%;
+  height: 100vh;
+  min-height: 700px;
+  background-color: rgb(15, 26, 22);
+  position: relative;
+  overflow: hidden;
+  background: url("../../assets/homebg.png") center center/cover no-repeat;
+}
+
+.homelogodevfolio {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 13%;
+  top: 18%;
+  z-index: 3000;
+}
+
+.homelogodevfolio img {
+  width: 100%;
+}
+
+.homelogodevfolio h2 {
+  margin-bottom: 0;
+  margin-top: -20px;
+  letter-spacing: 16px;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.homeFooter {
+  display: flex;
+  background: url("../../assets/homefooterbg.png") center center/cover no-repeat;
+  height: 185px;
+  margin-top: 0%;
+  z-index: 4000;
+  width: 100%;
+  margin-top: -180px;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.homeFooter > div {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.homeFooter > div h1 {
+  margin: 0;
+}
+@media screen and (max-width: 1000px) {
+  .homeFooter {
+    margin-top: -180px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .HomeWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .homelogodevfolio {
+    position: static;
+  }
+  .homeFooter {
+   margin-top: -180px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .HomeWrapper {
+    min-height: 100vh;
+  }
+}
+@media screen and (max-height: 780px) {
+  .homeFooter {
+    height: 135px;
+    margin-top: -130px;
+  }
+}
+@media screen and (max-height: 700px) {
+  .HomeWrapper {
+    min-height: 100vh;
+  }
+  .homelogodevfolio {
+    margin-top: -35px;
+    width: 280px;
+  }
+}

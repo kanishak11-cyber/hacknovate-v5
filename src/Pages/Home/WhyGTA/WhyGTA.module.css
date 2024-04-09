@@ -1,0 +1,77 @@
+.OverviewWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 4vh 0vw;
+}
+
+.InnerDiv {
+  display: flex;
+   width: 77%;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  color: white;
+  height: 100%;
+}
+
+.InnerDiv img {
+  max-height: 500px;
+  object-fit: contain;
+
+  width: 50%;
+}
+
+.InnerDiv div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+.InnerDiv div h1 {
+  margin: 0;
+  padding: 0%;
+  font-size: 30px;
+}
+.InnerDiv div ul {
+  margin: 0;
+  padding: 0%;
+  font-size: 18px;
+  text-align: left;
+}
+.InnerDiv div ul li{
+  padding: 5px 0px;
+}
+@media screen and (max-width: 900px) {
+  .InnerDiv {
+    gap: 5%;
+  }
+  .InnerDiv img {
+    max-height: 400px;
+  }
+  .InnerDiv div h1 {
+    font-size: 30px;
+  }
+.InnerDiv div ul {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .InnerDiv {
+    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .InnerDiv img {
+ max-height: auto;
+    width: 100%;
+  }
+  .InnerDiv div h1 {
+    font-size: 30px;
+  }
+  .InnerDiv div ul {
+    font-size: 14px;
+  }
+}

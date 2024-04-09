@@ -1,0 +1,80 @@
+.HomeWrapper {
+  width: 100%;
+  height: 100vh;
+  min-height: 700px;
+  background-color: rgb(15, 26, 22);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../../assets/homebg.png") center center/cover no-repeat;
+}
+
+.homelogodevfolio {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 3000;
+}
+
+.homelogodevfolio img {
+  width: 100%;
+}
+
+.homelogodevfolio h2 {
+  margin-top: -10px;
+  letter-spacing: 1.6vw;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+.homeFooter {
+  display: flex;
+  background: url("../../assets/homefooterbg.png") center center/cover no-repeat;
+  height: 185px;
+  margin-top: -3.5%;
+  z-index: 4000;
+  width: 100%;
+
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.homeFooter > div {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.homeFooter > div h1 {
+  margin: 0;
+}
+@media screen and (max-width: 1000px) {
+  .homeFooter {
+    margin-top: -6.8%;
+  }
+  .homelogodevfolio {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .HomeWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .homelogodevfolio {
+    width: 80%;
+    
+  }
+  .homeFooter {
+    margin-top: -10%;
+  }
+}

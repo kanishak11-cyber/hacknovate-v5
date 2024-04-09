@@ -1,0 +1,110 @@
+.navbarWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  backdrop-filter: blur(5px);
+
+  position: fixed;
+  z-index: 9000;
+  height: 75px;
+  overflow: hidden;
+}
+.navLogoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-left: 2vw;
+  padding: 20px 0px;
+}
+.navLogoWrapper > div {
+  width: 2px;
+  height: 30px;
+  backdrop-filter: blur(5px);
+}
+.navigationContentWrapper {
+  display: flex;
+  gap: 20px;
+}
+.atagWrapper {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 400;
+}
+
+.navRegisterButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-right: 2vw;
+}
+
+.navRegisterButton:hover {
+  background: white;
+  color: black;
+}
+
+.mobileNav {
+  display: none;
+  backdrop-filter: blur(5px);
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+.menuDiv {
+  position: fixed;
+  top: 100px;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+
+  height: 88vh;
+  width: 100vw;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menuDiv a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.menuDiv a p {
+  margin: 0px;
+}
+@media screen and (max-width: 920px) {
+  .navbarWrapper {
+    display: none;
+  }
+  .mobileNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 5%;
+    position: fixed;
+    z-index: 9000;
+  }
+  .navLogoWrapper {
+    margin: 0;
+  }
+  .menuHamburger {
+    color: white;
+    font-size: 40px;
+  }
+  .navRegisterButton {
+    margin: 0;
+  }
+}

@@ -1,0 +1,82 @@
+.outerWrapper{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+
+.FooterWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  gap: 50px;
+  margin-bottom: 30px;
+
+}
+
+.footerTop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px 0px;
+}
+
+.FooterWrapper a {
+  text-decoration: none;
+  color: white;
+}
+.FooterWrapper a:hover {
+
+  font-weight: 700;
+}
+
+.footerTopContent {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.FooterSocialMedia {
+  display: flex;
+  gap: 30px;
+}
+
+.footerBottom {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+.footerHackName {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  color: white;
+}
+
+@media screen and (max-width: 650px) {
+  .FooterWrapper {
+    gap: 30px;
+  }
+  .footerTop {
+    gap: 25px;
+
+    justify-content: center;
+  }
+  .footerBottom {
+    flex-direction: column;
+
+    gap: 20px;
+  }
+}
